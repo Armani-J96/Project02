@@ -1,0 +1,20 @@
+<div>
+
+    <h2>Welcome, {{creator.fullName}}</h2>
+
+    <a href="/lessons/new">Add a lesson</a>
+
+    {{#if lessons}}
+
+        <h3>Listed lessons</h3>
+
+        {{#each lessons}}
+
+            <a href="/lessons/details/{{_id}}">{{name}}</a>
+
+        {{/each}}
+
+    {{/if}}
+
+
+</div>
